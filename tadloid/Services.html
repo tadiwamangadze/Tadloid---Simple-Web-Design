@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+	    <meta name="description" content="Tad's professional web design">
+		<meta name="keywords" content="Tadiwa Mangadze">
+	  	<meta name="author" content="Tadiwa Mangadze">
+	    <title>Tadloid | Services</title>
+	    <!--link rel="shortcut icon" href="./img/logo.png" type="image/x-icon"-->
+	    <link rel="stylesheet" href="web.css">
+	    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+
+	</head>
+	
+	<body>
+
+		<SCRIPT>
+
+				function passWord() {
+
+					var testV = 1;
+					var pass1 = prompt('Please your unique code',' ');
+					while (testV < 3) {
+						if (!pass1)
+							window.history.go(-1);
+						    //window.open('Home.html');
+						if (pass1.toLowerCase() == "red") {
+							alert('Thank you');
+							window.open('Registration.html');
+							break;
+						}
+						testV+=1;
+						var pass1 =
+						prompt('Access Denied - Code Incorrect, Please Try Again.','Password');
+					}
+					if (pass1.toLowerCase()!="password" & testV ==3)
+					history.go(-1);
+
+					return " ";
+				}
+		</SCRIPT>
+		<header>
+
+			<div class="container">
+				<div id = "logo">
+					<h1><a href="Home.html">&#xbb; tadloid </a></h1>
+				</div>
+				<nav class="navigation">
+					<ul>
+					  <li><a href="Home.html">Home</a></li>
+					  <li class="dropdown"><a class="drop" href="#">About</a>
+					  	<div class="dropdown-content">
+					  		<a href="Facts.html">The Facts</a>
+						    <a href="Team.html">Team</a>
+						  </div>
+					  </li>
+					  <li><a class="current" href="Services.html">Services</a></li>
+					  <li class="dropdown"><a class="drop" href="Schools.html">Schools</a>
+					  	<!--div class="dropdown-content">
+						    <a href="https://www.kennesaw.edu" target="_blank">Kennesaw State University</a>
+						    <a href="https://www.gsu.edu" target="_blank">Georgia State University</a>
+						    <a href="https://www.gatech.edu" target="_blank">Georgia Institute Of Technology</a>
+						  </div-->
+					  </li>
+					  <li><a href="Contact.html">Contact</a></li>
+					  <li class="dropdown"><a class="drop" href="#">More</a>
+					  	<div class="dropdown-content">
+					  		<a href="Testing.html">Standadised Testing</a>
+						    <a href="https://educationusa.state.gov/your-5-steps-us-study" target="_blank">Education USA</a>
+						    <a href="https://www.edperspective.org/credential-evaluation-services.php" target="_blank">Transcript Evaluation</a>
+						    <a href="#" onClick="passWord()">Registration</a>
+						  </div>
+					  </li>
+					  
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<body>
+			<section id="showcase">
+			<p style="border-top: #8359A3 5px solid; max-width: 1000px;"></p>
+			<div class="container">
+		        <h1>Services</h1>
+	    	</div>
+		</section>
+			<section id="apply">
+		        <div class="caption">
+		          <p><iframe title="vimeo-player" src="https://player.vimeo.com/video/377618284" width="1000" height="730" frameborder="0" allowfullscreen></iframe></p>
+		        </div>
+		    </section>
+		    
+			<section>
+				<div>
+					<h1 style="float:left; font-size: 35px; margin-top: 50px;">Lorem ipsum dolor</h1>
+				</div>
+				<aside class="sidetext">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum congue elit id pharetra. Donec vulputate, dolor eget tempor rutrum, nulla tellus vulputate neque, et sodales metus est sit amet dolor. In hac habitasse platea dictumst. Donec sit amet purus iaculis, aliquam augue sed, dignissim dui. Praesent a sem sed turpis iaculis ultrices ut sit amet augue. Cras consequat eleifend lorem sed laoreet. Nam quam massa, semper ac aliquam non, scelerisque vitae ex. Nullam mattis sodales quam a interdum.</p>
+					<div class="purpleTags">
+						<h1><a class="More" href="home.html">Learn More &#x2192;</a></h1>
+					</div>
+				</aside>
+			</section>
+			<section>
+				<img src="https://source.unsplash.com/1600x900" alt="" style="height: 0px">
+			</section>
+
+		</body>
+	<footer>
+		<div>
+        	<button class="button" onclick='window.location.href="Contact.html"'>CONTACT US</button>
+    	</div>
+    	&copy; 2019 DESIGNED BY <p style="color: #8359A3; display: inline;">tadiwa</p>
+	</footer>
+</html>

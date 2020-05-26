@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width">
+	    <meta name="description" content="Tad's professional web design">
+		<meta name="keywords" content="Tadiwa Mangadze">
+	  	<meta name="author" content="Tadiwa Mangadze">
+	    <title>Tadloid | Welcome</title>
+	    <!--link rel="shortcut icon" href="./img/logo.png" type="image/x-icon"-->
+	    <link rel="stylesheet" href="web.css">
+	    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+
+	    <script type="text/JavaScript">
+			function timedRefresh(timeoutPeriod) {
+				setTimeout("location.reload(true);",timeoutPeriod);
+			}
+		</script>
+
+	</head>
+	
+	<body onload="JavaScript:timedRefresh(120000);">
+
+		<SCRIPT>
+
+			function passWord() {
+
+				var testV = 1;
+				var pass1 = prompt('Please your unique code',' ');
+
+				while (testV < 3) {
+					if (!pass1){
+						window.history.go(-1);
+					    //window.open('Home.html');
+					}
+
+					if (pass1.toLowerCase() == "red") {
+						alert('Thank you');
+						window.open('Registration.html');
+						break;
+					}
+
+					testV++;
+					var pass1 =
+					prompt('Access Denied - Code Incorrect, Please Try Again.','Password');
+				}
+				if (pass1.toLowerCase()!="password" & testV ==3){
+					alert('Please contact Tadloid for permission to access this page. Thank You.');
+					history.go(-1);
+				}
+				return " ";
+			}
+	</SCRIPT>
+
+		<header>
+			<div class="container">
+				<div id = "logo">
+					<h1><a href="Home.html">&#xbb; tadloid </a></h1>
+				</div>
+				<nav class="navigation">
+					<ul>
+					  <li><a class="current" href="Home.html">Home</a></li>
+					  <li class="dropdown"><a class="drop" href="#">About</a>
+					  	<div class="dropdown-content">
+						    <a href="Facts.html">The Facts</a>
+						    <a href="Team.html">Team</a>
+						  </div>
+					  </li>
+					  <li><a href="Services.html">Services</a></li>
+					  <li class="dropdown"><a class="drop" href="Schools.html">Schools</a>
+					  	<!--div class="dropdown-content">
+						    <a href="https://www.kennesaw.edu" target="_blank">Kennesaw State University</a>
+						    <a href="https://www.gsu.edu" target="_blank">Georgia State University</a>
+						    <a href="https://www.gatech.edu" target="_blank">Georgia Institute Of Technology</a>
+						  </div-->
+					  </li>
+					  <li><a href="Contact.html">Contact</a></li>
+					  <li class="dropdown"><a class="drop" href="#">More</a>
+					  	<div class="dropdown-content">
+					  		<a href="Testing.html">Standadised Testing</a>
+						    <a href="https://educationusa.state.gov/your-5-steps-us-study" target="_blank">Education USA</a>
+						    <a href="https://www.edperspective.org/credential-evaluation-services.php" target="_blank">Transcript Evaluation</a>
+						    <a href="#" onClick="passWord()">Registration</a>
+						  </div>
+					  </li>
+
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+
+		<section id="showcase">
+			<p style="border-top: #8359A3 5px solid; max-width: 1000px;"></p>
+			<div class="container">
+		        <h1>Empowering students to achieve academic excellence and innovation.</h1>
+	    	</div>
+		</section>
+		<section>
+			<img src="https://source.unsplash.com/1000x562.5/?college, university, campus, graduate, library" alt=""> 
+		</section>
+		<section>
+			<div>
+				<h1 style="float:left; font-size: 35px; margin-top: 50px;">Our Beginning</h1>
+			</div>
+			<aside class="sidetext">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum congue elit id pharetra. Donec vulputate, dolor eget tempor rutrum, nulla tellus vulputate neque, et sodales metus est sit amet dolor. In hac habitasse platea dictumst. Donec sit amet purus iaculis, aliquam augue sed, dignissim dui. Praesent a sem sed turpis iaculis ultrices ut sit amet augue. Cras consequat eleifend lorem sed laoreet. Nam quam massa, semper ac aliquam non, scelerisque vitae ex. Nullam mattis sodales quam a interdum.</p>
+			</aside>
+		</section>
+		<section id="showcase">
+			<div class="container">
+		        <h1>“The man who says he can, and the man who says he can't are both correct”</h1>
+	    	</div>
+	    	<div class="purpleTags"><p style="font-size: 20px; margin-top: -25px;">- CONFUCIUS</p></div>
+		</section>
+		<section>
+			<aside class="sidetext">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum congue elit id pharetra. Donec vulputate, dolor eget tempor rutrum, nulla tellus vulputate neque, et sodales metus est sit amet dolor. In hac habitasse platea dictumst. Donec sit amet purus iaculis, aliquam augue sed, dignissim dui. Praesent a sem sed turpis iaculis ultrices ut sit amet augue. Cras consequat eleifend lorem sed laoreet. Nam quam massa, semper ac aliquam non, scelerisque vitae ex. Nullam mattis sodales quam a interdum..</p>
+			</aside>
+		</section>
+		<section>
+			<img src="https://source.unsplash.com/1000x562.5/?uct, stellenbosch" alt="">
+		</section>
+		<section>
+			<div>
+				<h1 style="float:left; font-size: 35px; margin-top: 50px;">Why study in the US?</h1>
+			</div>
+			<aside class="sidetext">
+				<p>As a future global leader, you need to feel at home in a fast-changing world.  By studying abroad, you will experience new perspectives, learn how to navigate different cultures, work with diverse peers, and communicate in other languages.  Whether you are a future innovator, entrepreneur, engineer, scientist, doctor, journalist, teacher or diplomat, these are the skills that will prepare you to solve the world’s toughest challenges, make you more competitive in the job market, and transform you into a responsible, engaged citizen.<br><br>
+
+				An international experience should be part of your education, whatever your goals, socioeconomic status, or field of study.  Every year, many students across the world study, intern, or volunteer abroad for academic credit on programs ranging from two weeks to a full academic year. International educational experiences that you undertake with thoughtfulness and purpose are valuable, regardless of duration or format.<br><br>
+
+				The world is yours to discover.  Take the first step today.</p>
+				<div class="purpleTags">
+					<h1><a class="More" href="https://studyabroad.state.gov/value-study-abroad/why-study-abroad" target="_blank">Learn More &#x2192;</a></h1>
+				</div>
+			</aside>
+		</section>
+		
+		<section>
+			<img src="https://source.unsplash.com/1600x900" alt="" style="height: 0px">
+		</section>
+		<section id="boxes">
+		  <!--hr style="height:220pt; visibility:hidden;" /> <moves boxes to new line-->
+	      <div class="container">
+	        <div class="box">
+	          <h3 class="purpleTags">60%</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+	        </div>
+	        <div class="box">
+	          <h3 class="purpleTags">30%</h3> 
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+	        </div>
+	        <div class="box" style="margin-right: 0px;">
+	          <h3 class="purpleTags">10%</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+	        </div>
+	      </div>
+	    </section>
+	    <section>
+			<aside class="sidetext">
+				<p>Project Sprout took root in founder Nadia Shabazz’s backyard. Her family had a need for fresh produce since the nearest supermarket only carried semi-spoiled bananas and tomatoes. Shabazz started small, planting leafy greens and berries. When it came time to harvest, she gave extras away to neighbors. She began to see drastic improvements in her children’s health and thought that everyone on her block could benefit. She began inviting neighbors who didn’t have gardens to come plant on her land.</p>
+				<div class="purpleTags">
+					<h1><a class="More" href="home.html">Learn More &#x2192;</a></h1>
+				</div>
+			</aside>
+
+		</section>
+		<section>
+			<img src="https://source.unsplash.com/1600x900/?students, applications, universities, academics" alt="">
+		</section>
+		<section>
+			<div>
+				<h1 style="float:left; font-size: 35px; margin-top: 50px;">Our Beginning</h1>
+			</div>
+			<aside class="sidetext">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum congue elit id pharetra. Donec vulputate, dolor eget tempor rutrum, nulla tellus vulputate neque, et sodales metus est sit amet dolor. In hac habitasse platea dictumst. Donec sit amet purus iaculis, aliquam augue sed, dignissim dui. Praesent a sem sed turpis iaculis ultrices ut sit amet augue. Cras consequat eleifend lorem sed laoreet. Nam quam massa, semper ac aliquam non, scelerisque vitae ex. Nullam mattis sodales quam a interdum.</p>
+				<div class="purpleTags">
+					<h1><a class="More" href="home.html">Learn More &#x2192;</a></h1>
+				</div>
+			</aside>
+		</section>
+		<section>
+			<img src="https://source.unsplash.com/1600x900" alt="" style="height: 0px">
+		</section>
+
+	</body>
+	<footer>
+		<div>
+        	<button class="button" onclick='window.location.href="Contact.html"'>CONTACT US</button>
+    	</div>
+    	&copy; 2019 DESIGNED BY <p style="color: #8359A3; display: inline;">tadiwa</p>
+	</footer>
+</html>
